@@ -96,7 +96,7 @@ public class GoogleLoginTest : MonoBehaviour
         else if (score >= 5)
         {
 #if UNITY_ANDROID
-            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_test1, 5f, null);
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_feever_x_5, 5f, null);
 #elif UNITY_IOS
             Social.ReportProgress("Score_100", 100f, null);
 #endif
