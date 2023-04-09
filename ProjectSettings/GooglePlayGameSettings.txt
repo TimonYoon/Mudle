@@ -1,2 +1,9 @@
-lastUpgrade=00950
-proj.pluginVersion=0.9.50
+lastUpgrade=01101
+proj.pluginVersion=0.11.01
+proj.AppId=597169810956
+and.BundleId=com.blackout.plojectA
+proj.classDir=Assets
+proj.ConstantsClassName=GPGSIds
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--Google+Play+game+services+IDs.+Save+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.--%3e%0d%0a%3cresources%3e%0d%0a++%3c%21--app_id--%3e%0d%0a++%3cstring+name%3d%22app_id%22+translatable%3d%22false%22%3e597169810956%3c%2fstring%3e%0d%0a++%3c%21--package_name--%3e%0d%0a++%3cstring+name%3d%22package_name%22+translatable%3d%22false%22%3ecom.blackout.plojectA%3c%2fstring%3e%0d%0a++%3c%21--achievement+Feever+X+5--%3e%0d%0a++%3cstring+name%3d%22achievement_feever_x_5%22+translatable%3d%22false%22%3eCgkIjNzg0LAREAIQAg%3c%2fstring%3e%0d%0a++%3c%21--achievement+Combo+X+20--%3e%0d%0a++%3cstring+name%3d%22achievement_combo_x_20%22+translatable%3d%22false%22%3eCgkIjNzg0LAREAIQAw%3c%2fstring%3e%0d%0a++%3c%21--achievement+Play+X+50--%3e%0d%0a++%3cstring+name%3d%22achievement_play_x_50%22+translatable%3d%22false%22%3eCgkIjNzg0LAREAIQBA%3c%2fstring%3e%0d%0a++%3c%21--leaderboard+Best+Score--%3e%0d%0a++%3cstring+name%3d%22leaderboard_best_score%22+translatable%3d%22false%22%3eCgkIjNzg0LAREAIQAA%3c%2fstring%3e%0d%0a%3c%2fresources%3e
+and.ClientId=597169810956-pdl8rji4fusbefs88iv6t8r3tjb0eutf.apps.googleusercontent.com
+android.SetupDone=true
