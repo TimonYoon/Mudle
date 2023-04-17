@@ -17,26 +17,36 @@ public class GoogleLoginTest : MonoBehaviour
     //public Text text_Test;
     void Start()
     {
-        PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+        // Create client configuration
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+
+        // Enable debugging output (recommended)
+        PlayGamesPlatform.DebugLogEnabled = true;
+
+        // Initialize and activate the platform
+        PlayGamesPlatform.InitializeInstance(config);
+        PlayGamesPlatform.Activate();
+        SignIn();
     }
-    private void ProcessAuthentication(SignInStatus status) 
-    {
-        Debug.Log($"ProcessAuthentication {status}");
-        if (status == SignInStatus.Success)
-        {
-            //디버깅에 권장됨
-            PlayGamesPlatform.DebugLogEnabled = true;
-            //PlayGamesPlatform 활성화
-            PlayGamesPlatform.Activate();
-            SignIn();
-        } 
-        else 
-        {
-            // Disable your integration with Play Games Services or show a login button
-            // to ask users to sign-in. Clicking it should call
-            // PlayGamesPlatform.Instance.ManuallyAuthenticate(ProcessAuthentication).
-        }
-    }
+    
+    // private void ProcessAuthentication(SignInStatus status) 
+    // {
+    //     Debug.Log($"ProcessAuthentication {status}");
+    //     if (status == SignInStatus.Success)
+    //     {
+    //         //디버깅에 권장됨
+    //         PlayGamesPlatform.DebugLogEnabled = true;
+    //         //PlayGamesPlatform 활성화
+    //         PlayGamesPlatform.Activate();
+    //         SignIn();
+    //     } 
+    //     else 
+    //     {
+    //         // Disable your integration with Play Games Services or show a login button
+    //         // to ask users to sign-in. Clicking it should call
+    //         // PlayGamesPlatform.Instance.ManuallyAuthenticate(ProcessAuthentication).
+    //     }
+    // }
 
     public void SignIn()
     {
