@@ -29,6 +29,13 @@ public class ScreenShot : MonoBehaviour
         Destroy(screenTexture);
         if (!Application.isEditor)
         {
+            var message = "Thank you for sharing :) \n" + "#MEOWDLE";
+            new NativeShare().AddFile(destination)
+                             .SetSubject("Hellow Meowdle!")
+                             .SetText(message)
+                             .SetUrl("https://play.google.com/store/apps/details?id=com.blackout.plojectA")
+                             .Share();
+
             //new NativeShare().AddFile(destination).SetSubject("Subject goes here").SetText("Hellow Meowdle! \nThank you for sharing :) \n" + "#MEOWDLE https://play.google.com/store/apps/details?id=com.blackout.plojectA").Share();
             //AndroidJavaClass intentClass = new AndroidJavaClass("android.content.Intent");
             //AndroidJavaObject intentObject = new AndroidJavaObject("android.content.Intent");

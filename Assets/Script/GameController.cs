@@ -88,7 +88,7 @@ public class GameController : MonoBehaviour
             string data = PlayerPrefs.GetString(key);
             isFirst = bool.Parse(data);
         }
-        //Screen.SetResolution(720, 1280, false);
+        Screen.SetResolution(720, 1280, true);
 
         LobbyManager.Instance.onGameSceneLoadSuccess += OnGameSceneLoadSuccess;
     }
